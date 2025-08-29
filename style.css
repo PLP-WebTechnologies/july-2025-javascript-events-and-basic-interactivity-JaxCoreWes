@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  color: #444;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 6px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+/* FAQ styling */
+.faq-answer {
+  display: none;
+  margin: 5px 0 15px;
+  padding: 8px;
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.dark-mode .faq-answer {
+  background: #333;
+  color: #ccc;
+}
+
+.faq-question {
+  cursor: pointer;
+  background: #e7e7e7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.dark-mode .faq-question {
+  background: #444;
+  color: #fff;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background: #f0f0f0;
+}
+
+.dark-mode .dropdown-content {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+#formMessages {
+  margin-top: 10px;
+  font-weight: bold;
+}
