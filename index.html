@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Interactive JavaScript Playground</h1>
+  <p>Explore this page and interact with the elements. JavaScript makes everything dynamic and fun!</p>
+
+  <!--Event Handling -->
+  <section>
+    <h2>Secret Message Button</h2>
+    <button id="toggleMessageBtn">Click to Reveal</button>
+    <p id="hiddenMessage" style="display: none;">Hidden content.</p>
+  </section>
+
+  <!--Interactive Elements -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <p>Switch between light and dark themes.</p>
+    <button id="themeToggle">Toggle Theme</button>
+  </section>
+
+  <section>
+    <h2>Click Counter Game</h2>
+    <p>How many times can you click? Try it!</p>
+    <button id="counterBtn">Click Me!</button>
+    <p>Score: <span id="counterValue">0</span></p>
+  </section>
+
+  <section>
+    <h2>FAQ Section</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">It’s the magic that makes web pages come alive.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">Why is it important?</h3>
+      <p class="faq-answer">Because without it, websites would be static and boring.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">Is it fun to learn?</h3>
+      <p class="faq-answer">Absolutely! The more you practice, the more powerful it feels.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dropdown Menu (Extra Feature)</h2>
+    <p>Choose your favorite programming language:</p>
+    <div class="dropdown">
+      <button id="dropdownBtn">Select Language ▼</button>
+      <ul id="dropdownMenu" class="dropdown-content">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+      </ul>
+    </div>
+    <p id="dropdownResult"></p>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Join Our Club</h2>
+    <p>Fill the form below to sign up.</p>
+    <form id="signupForm">
+      <label>
+        Name: <input type="text" id="name" placeholder="Your name">
+      </label><br><br>
+      <label>
+        Email: <input type="text" id="email" placeholder="you@example.com">
+      </label><br><br>
+      <label>
+        Password: <input type="password" id="password" placeholder="Min 6 characters">
+      </label><br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formMessages"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
